@@ -1,0 +1,23 @@
+{
+  "flow_conditions": {
+    "potential_random_variables": ["mach", "reynolds", "stanton", "attack_angle"],
+    "variance": {
+      "mach": 1,
+      "reynolds": 1,
+      "stanton": 1,
+      "attack_angle": 1
+    }
+  },
+
+
+  "measurements": {
+    "moment_center": [],
+
+    "variance": {
+      "pressure": [],
+      "heat_flux": [],
+      "forces": [],
+      "moments": []
+    }
+  }
+}

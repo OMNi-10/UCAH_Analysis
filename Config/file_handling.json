@@ -1,0 +1,3 @@
+{
+  "header_variables" : ["name", "case_type", "status", "mesh", "mach", "reynolds", "stanton", "attack_angle"]
+}
