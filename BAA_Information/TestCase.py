@@ -100,7 +100,7 @@ class TestCase:
         self.__dict__[key] = value
 
     def format_for_csv(self) -> list:
-        file_config = read_json("000_Config/file_handling.json")
+        file_config = read_json("AAA_Config/file_handling.json")
         header_names = file_config["header_variables"]
 
         data = []
@@ -128,7 +128,7 @@ def case_in_csv(test_cases: TestCase, path: str, skip_header: bool = True) -> di
     return locations
 
 def setup_csv(path: str):
-    file_config = read_json("000_Config/file_handling.json")
+    file_config = read_json("AAA_Config/file_handling.json")
     header = file_config["header_variables"]
     with open(path, "w", newline='') as f:
         writer = csv.writer(f)

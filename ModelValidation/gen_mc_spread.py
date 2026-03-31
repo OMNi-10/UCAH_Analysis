@@ -17,7 +17,7 @@ def gen_mc_spread(
     assert test_case.status in [TC.STATUS.proposed, TC.STATUS.failure], "Must have not already generated child cases."
 
     # Read in the cubric config json file
-    cubrc_config = read_json("000_Config/cubrc.json")
+    cubrc_config = read_json("AAA_Config/cubrc.json")
     potential_random_variables = cubrc_config["flow_conditions"]["potential_random_variables"]
 
     # Record the lists of active and inactive variables
@@ -68,7 +68,7 @@ if __name__ == "__main__":
     test_case["attack_angle"] = 0
     child_list = gen_mc_spread(test_case, n = 10)
 
-    path = "001_PrerequisiteData/gen_mc_spread.csv"
+    path = "AAB_PrerequisiteData/gen_mc_spread.csv"
     TC.setup_csv(path)
     TC.append_case_to_csv(test_case, path)
     TC.append_case_to_csv(child_list, path)

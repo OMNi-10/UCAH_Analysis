@@ -10,5 +10,5 @@ class Fluid:
         self.gamma = gamma
         self.c_p = c_p
 
-air_config = read_json('001_PrerequisiteData/air.json')
+air_config = read_json('AAB_PrerequisiteData/air.json')
 Air = Fluid(R = air_config['R'], gamma = air_config['gamma'], c_p = air_config['c_p'])
